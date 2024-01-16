@@ -1,11 +1,13 @@
 package org.exemple;
 
+import com.sun.tools.javac.Main;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import page_object.OrderingScooterPage;
-import page_object.TopBar;
+import pageobject.MainPage;
+import pageobject.OrderingScooterPage;
+import pageobject.TopBar;
 
 @RunWith(Parameterized.class)
 public class ParamOrderTest extends StartQuitSteps {
@@ -34,7 +36,7 @@ public class ParamOrderTest extends StartQuitSteps {
     }
 
     @Test
-    public void test() {
+    public void orderTest() {
         TopBar topBar = new TopBar(driver);
         OrderingScooterPage orderingScooterPage = new OrderingScooterPage(driver);
 

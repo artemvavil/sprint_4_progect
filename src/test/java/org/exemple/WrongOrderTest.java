@@ -4,15 +4,15 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import page_object.StatusOrderPage;
-import page_object.TopBar;
+import pageobject.StatusOrderPage;
+import pageobject.TopBar;
 
 import java.time.Duration;
 
 public class WrongOrderTest extends StartQuitSteps {
 
     @Test
-    public void test() {
+    public void wrongOrderTest() {
         TopBar topBar = new TopBar(driver);
         StatusOrderPage statusOrderPage = new StatusOrderPage(driver);
 

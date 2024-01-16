@@ -1,4 +1,4 @@
-package page_object;
+package pageobject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,6 +17,10 @@ public class OrderingScooterPage {
     }
 
     //Локаторы
+
+    @FindBy(className = "Order_Content__bmtHS")
+    private WebElement inputWindow;
+
     @FindBy(xpath = ".//input[@placeholder='* Имя']")
     private WebElement name;
 
@@ -85,6 +89,10 @@ public class OrderingScooterPage {
 
 
     //Методы
+
+    public boolean checkInputWindow(){
+        return  inputWindow.isDisplayed();
+    }
     public void inputName(String text) {
         name.sendKeys(text);
     }

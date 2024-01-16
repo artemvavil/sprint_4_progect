@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import page_object.MainPage;
+import pageobject.MainPage;
 
 @RunWith(Parameterized.class)
 public class QuestionsImportantTest extends StartQuitSteps {
@@ -34,11 +34,11 @@ public class QuestionsImportantTest extends StartQuitSteps {
     }
 
     @Test
-    public void test() {
+    public void questionsImportantTest() {
         MainPage mainPage = new MainPage(driver);
 
         mainPage.scroll();
         mainPage.clickArrow(questionNumbersAnInt);
-        Assert.assertTrue(mainPage.textIsTrue(questionNumbersAnInt));
+        Assert.assertTrue(mainPage.checkTextArrow(questionNumbersAnInt));
     }
 }

@@ -3,11 +3,10 @@ package org.exemple;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import page_object.MainPage;
-import page_object.OrderingScooterPage;
-import page_object.TopBar;
+import pageobject.OrderingScooterPage;
+import pageobject.TopBar;
 
-public class CorrectTest extends StartQuitSteps {
+public class OrderErrorTests extends StartQuitSteps {
 
     @Before
     public void baseStep(){
